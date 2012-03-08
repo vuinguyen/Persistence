@@ -18,8 +18,8 @@ NSString * const TI_APPLICATION_COPYRIGHT = @"not specified";
 NSString * const TI_APPLICATION_GUID = @"ef78a2da-817a-47ba-8b32-3a21a3745224";
 BOOL const TI_APPLICATION_ANALYTICS = true;
 
-#ifdef DEBUG
-NSString * const TI_APPLICATION_RESOURCE_DIR = @"/Users/kevin/dev/appc/Persistence/build/iphone/build/Debug-iphonesimulator/Persistence.app";
+#ifdef TARGET_IPHONE_SIMULATOR
+NSString * const TI_APPLICATION_RESOURCE_DIR = @"/Users/vuinguyen/Documents/Titanium Studio Workspace/Persistence/Resources";
 #endif
 
 int main(int argc, char *argv[]) {
@@ -33,7 +33,7 @@ int main(int argc, char *argv[]) {
 	fprintf(stderr,"[INFO] Application started\n");
 #endif
 
-    int retVal = UIApplicationMain(argc, argv, nil, nil);
+	int retVal = UIApplicationMain(argc, argv, nil, @"TiApp");
     [pool release];
     return retVal;
 }

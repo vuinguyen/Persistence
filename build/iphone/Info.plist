@@ -10,6 +10,24 @@
 	<string>${EXECUTABLE_NAME}</string>
 	<key>CFBundleIconFile</key>
 	<string>appicon.png</string>
+	<key>CFBundleIconFiles</key>
+	<array>
+		<string>appicon.png</string>
+		<string>appicon@2x.png</string>
+		<string>appicon-72.png</string>
+	</array>
+	<key>CFBundleURLTypes</key>
+	<array>
+		<dict>
+			<key>CFBundleURLName</key>
+			<string>com.appcelerator.persistence</string>
+			<key>CFBundleURLSchemes</key>
+			<array>
+				<string>persistence</string>
+				
+			</array>
+		</dict>
+	</array>
 	<key>CFBundleIdentifier</key>
 	<string>com.appcelerator.persistence</string>
 	<key>CFBundleInfoDictionaryVersion</key>
@@ -24,8 +42,6 @@
 	<string>1.0</string>
 	<key>LSRequiresIPhoneOS</key>
 	<true/>
-	<key>NSMainNibFile</key>
-	<string>MainWindow</string>
         <key>UIStatusBarStyle</key>
         <string>UIStatusBarStyleDefault</string>
 </dict>
